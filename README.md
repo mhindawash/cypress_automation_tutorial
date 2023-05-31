@@ -25,6 +25,7 @@ Once you have Node.js and npm installed, open your terminal or command prompt an
 
 ```bash
 npm install cypress --save-dev
+```
 
 This command tells npm (the Node Package Manager) to download the Cypress package and save it as a development dependency in your project.
 
@@ -38,6 +39,7 @@ describe('My First Test', function() {
     expect(true).to.equal(true)
   })
 })
+```
 
 This code defines a simple test that asserts that true is equal to true.
 
@@ -46,6 +48,7 @@ To run your test, use the following command in your terminal:
 
 ```bash
 npx cypress open
+```
 
 This will open the Cypress Test Runner, where you can select your test and run it.
 
