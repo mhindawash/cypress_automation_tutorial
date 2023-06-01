@@ -5,14 +5,19 @@ describe('npm install modal pops up', () => {
     it('opens npm install window and closes it', () => {
         // Loading the cypress landing page
         cy.visit('www.cypress.io')
-        cy.wait(1000)
+            .wait(1000)
+    })
 
         // Click the npm install cypress button
+    it('opens the npm install modal', () => {
         cy.contains('npm install cypress').click()
-        cy.wait(1000)
-
+            .wait(1000)    
+    })    
+    
         // Click the 'x' button to close the npm install window
+    it('closes the npm install modal', () => {
         cy.get('.shrink-0 > .group').click()
-        cy.wait(1000)
-    })
+            .wait(1000)
+    })    
+    
 })
