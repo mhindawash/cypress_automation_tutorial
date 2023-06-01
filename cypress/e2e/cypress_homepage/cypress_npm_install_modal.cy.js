@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-// Assert npm install window opens and closes
-describe('npm install window', () => {
+// Assert npm install modal opens and closes
+describe('npm install modal pops up', () => {
     it('opens npm install window and closes it', () => {
         // Loading the cypress landing page
         cy.visit('www.cypress.io')
